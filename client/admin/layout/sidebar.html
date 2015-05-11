@@ -1,0 +1,21 @@
+<template name="app_admin_sidebar">
+    {{#elao_strap_left_sidebar}}
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="elaostrap-font-github"></i>
+                        Collections
+                    </a>
+                    <ul>
+                        {{#each collections}}
+                            <li class="{{activeClass}}">
+                                <a href="{{href}}">{{title}}</a>
+                            </li>
+                        {{/each}}
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    {{/elao_strap_left_sidebar}}
+</template>
