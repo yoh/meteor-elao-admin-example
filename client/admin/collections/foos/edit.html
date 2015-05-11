@@ -13,6 +13,13 @@
     {{/contentFor}}
 
     {{> quickForm type="update" id="admin_update" collection="Foos" doc=doc}}
-    {{> quickRemoveButton class="btn btn-danger admin_remove" collection="Foos" _id=doc._id onError=onRemoveError onSuccess=onRemoveSuccess}}
+    {{> quickRemoveButton
+        class="btn btn-danger admin_remove"
+        collection="Foos"
+        _id=doc._id
+        onError=onRemoveError
+        onSuccess=onRemoveSuccess
+        beforeRemove=beforeRemove
+    }}
 
 </template>
