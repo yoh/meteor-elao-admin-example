@@ -16,11 +16,14 @@ Package.onUse(function(api) {
     ], ['server', 'client']);
 
     api.export('Foos', ['server', 'client']);
+    api.export('Players', ['server', 'client']);
 
     api.add_files([
         'collections/schemas/deps/_.js',
         'collections/schemas/foos.js',
         'collections/foos.js',
+        'collections/schemas/players.js',
+        'collections/players.js',
     ], ['client', 'server']);
 });
 
