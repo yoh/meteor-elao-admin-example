@@ -1,3 +1,5 @@
+Schema = Schema || {};
+
 Schema.foos = new SimpleSchema({
     title: {
         type: String,

@@ -23,6 +23,14 @@ Template.app_admin_sidebar.helpers({
             href: Router.path('admin_list', {collection: 'players'}) + getCollectionFilters('players'),
             title: 'Players',
             activeClass: activeClass('players'),
+        },{
+            href: Router.path('admin_list', {collection: 'things'}) + getCollectionFilters('things'),
+            title: 'Things',
+            activeClass: activeClass('things'),
+        },{
+            href: Router.path('admin_list', {collection: 'thinggs'}) + getCollectionFilters('thinggs'),
+            title: 'Thinggs',
+            activeClass: activeClass('thinggs'),
         }];
     }
 });

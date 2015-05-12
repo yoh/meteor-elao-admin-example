@@ -17,13 +17,18 @@ Package.onUse(function(api) {
 
     api.export('Foos', ['server', 'client']);
     api.export('Players', ['server', 'client']);
+    api.export('Things', ['server', 'client']);
+    api.export('Thinggs', ['server', 'client']);
 
     api.add_files([
-        'collections/schemas/deps/_.js',
         'collections/schemas/foos.js',
         'collections/foos.js',
         'collections/schemas/players.js',
         'collections/players.js',
+        'collections/schemas/things.js',
+        'collections/things.js',
+        'collections/schemas/thinggs.js',
+        'collections/thinggs.js',
     ], ['client', 'server']);
 });
 

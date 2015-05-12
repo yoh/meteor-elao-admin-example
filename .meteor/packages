@@ -16,6 +16,6 @@ dburles:collection-helpers
 fourseven:scss@2.1.1
 
 elao:meteor-elaostrap
-elao:meteor-admin
 
 app:collections
+elao:meteor-admin

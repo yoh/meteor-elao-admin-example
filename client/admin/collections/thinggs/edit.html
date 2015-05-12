@@ -1,0 +1,25 @@
+<template name="thinggs_edit">
+    {{> contentFor region="breadcrumb" template="breadcrumb" data=breadcrumb}}
+
+    {{#contentFor "title"}}
+        Edit thinggs :
+        <small>{{doc}}</small>
+    {{/contentFor}}
+
+    {{#contentFor "navbar_buttons"}}
+        <a class="btn btn-warning" href="{{pathFor 'admin_list' collection=collection}}{{collectionFilters}}">
+            <i class="fa fa-arrow-left"></i> Back
+        </a>
+    {{/contentFor}}
+
+    {{> quickForm type="update" id="admin_update" collection="Thinggs" doc=doc}}
+    {{> quickRemoveButton
+        class="btn btn-danger admin_remove"
+        collection="Thinggs"
+        _id=doc._id
+        onError=onRemoveError
+        onSuccess=onRemoveSuccess
+        beforeRemove=beforeRemove
+    }}
+
+</template>

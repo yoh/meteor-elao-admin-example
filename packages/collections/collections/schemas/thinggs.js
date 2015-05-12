@@ -1,6 +1,9 @@
+/**
+ * Thinggs SimpleSchema
+ */
 Schema = Schema || {};
 
-Schema.players = new SimpleSchema({
+Schema.thinggs = new SimpleSchema({
     firstname: {
         type: String,
         label: "Firstname",
@@ -8,7 +11,7 @@ Schema.players = new SimpleSchema({
     },
     lastname: {
         type: String,
-        label: "lastname",
+        label: "Lastname",
         max: 149
     },
 });
